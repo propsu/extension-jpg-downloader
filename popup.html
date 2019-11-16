@@ -1,0 +1,63 @@
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=B612+Mono|Lato&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+        }
+        body{
+            margin: 0;
+            padding: 1rem;
+            border: 1px solid black;
+            font-family: 'Lato', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+            
+        }
+        input, button{
+            padding: .5rem;
+            background: white;
+            border: 1px solid black;
+            width: 200px;
+            margin: 5px;
+        }
+        h2{
+            color:black;
+        }
+       .images{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            padding: 1rem;
+            width: 500px;
+        } 
+        .images img{
+            width: 100px;
+            margin: 5px;
+        }
+        .images img:hover{
+            box-shadow: 0 0 3px 5px rgba(0, 0,0, .2);
+        }
+        .selected{
+            box-shadow: 0 0 3px 5px rgba(0, 255,0, .5);
+        }
+        .deselected{
+            box-shadow: 0 0 3px 5px rgba(255, 0,0, .5);
+        }
+    </style>
+</head>
+<body>
+    <h2>Downloader</h2>
+   <button type="button" class="btn">Get images</button>
+   <div class="images">
+
+   </div>
+</body>
+<script src="popup.js"></script>
+</html>
